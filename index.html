@@ -9,13 +9,15 @@
   <body>
     <div class="box">
         <h1>Grāmatu vērtēšana</h1>
+        <p1><a href="index.html"></a></p1>
+        <form action="submit.php" method="post">
         <div class="box-form">
             <label for="name" class="label">Ievadiet vārdu:</label>
-            <input for="name" name="name" class="input" placeholder="Vārds"></input>
+            <input type="text" id="name" name="name" class="input" placeholder="Vārds"></input>
             <label for="surname" class="label">Ievadiet uzvārdu</label>
-            <input for="surname" name="surname" class="input" placeholder="Uzvārds"></input>
+            <input type="text" id="surname" name="surname" class="input" placeholder="Uzvārds"></input>
             <label for="level" class="label">Izvēlaties līmeni:</label>
-            <select for="level" class="input">
+            <select id="level" name="level" class="input">
                 <option value=""></option>
                 <option value="5">Lieliska</option>
                 <option value="4">Laba</option>
@@ -24,11 +26,12 @@
                 <option value="1">Nelasāma</option>
             </select>
             <label for="title" class="label">Ievadiet nosaukumu:</label>
-            <input for="title" name="title" class="input" placeholder="Nosaukums"></input>
+            <input type="text" id="title" name="title" class="input" placeholder="Nosaukums"></input>
             <label for="description" class="label">Ievadiet aprakstu:</label>
-            <textarea for="description" name="description" class="input" placeholder="Apraksts"></textarea>
-            <button type="submit" name="submit">Submit</button>
+            <textarea name="description" id="description"  class="input" placeholder="Apraksts"></textarea>
+            <input type="submit" value="Submit"></button>
         </div>
+        </form>
     </div>
   </body>
 </html>

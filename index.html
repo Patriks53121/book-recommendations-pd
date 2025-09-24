@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Grāmatas</title>
+  </head>
+  <body>
+    <div class="box">
+        <h1>Grāmatu vērtēšana</h1>
+        <div class="box-form">
+            <label for="name" class="label">Ievadiet vārdu:</label>
+            <input for="name" name="name" class="input" placeholder="Vārds"></input>
+            <label for="surname" class="label">Ievadiet uzvārdu</label>
+            <input for="surname" name="surname" class="input" placeholder="Uzvārds"></input>
+            <label for="level" class="label">Izvēlaties līmeni:</label>
+            <select for="level" class="input">
+                <option value=""></option>
+                <option value="5">Lieliska</option>
+                <option value="4">Laba</option>
+                <option value="3">Viduvēja</option>
+                <option value="2">Slikta</option>
+                <option value="1">Nelasāma</option>
+            </select>
+            <label for="title" class="label">Ievadiet nosaukumu:</label>
+            <input for="title" name="title" class="input" placeholder="Nosaukums"></input>
+            <label for="description" class="label">Ievadiet aprakstu:</label>
+            <textarea for="description" name="description" class="input" placeholder="Apraksts"></textarea>
+            <button type="submit" name="submit">Submit</button>
+        </div>
+    </div>
+  </body>
+</html>

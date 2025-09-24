@@ -1,0 +1,22 @@
+.box {
+    width: 600px;
+    margin: auto;
+}
+.box-form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 600px;
+    margin: auto;
+
+    border: 2px solid black;
+}
+
+.label {
+
+    font-weight: bold;
+    font-size: 2rem;
+
+}

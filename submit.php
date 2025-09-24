@@ -6,7 +6,9 @@
     <title>Grāmatas</title>
 </head>
 <body>
-    <p1>Dati veiksmīgi nosūtīti</p1>
+    <h1>Dati veiksmīgi nosūtīti</h1> <br />
+    <p1><a href="index.html">Index</a></p1>
+    <p1><a href="list.php">List</a></p1>
 </body>
 </html>
 
@@ -26,15 +28,17 @@ try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
+  echo "Connected successfully <br />";
   $fullname = $values['name'] . " " .  $values['surname'];
   $title = $values['title'];
   $description = $values['description'];
-  $rating = $values['rating'];
+  $rating = $values['level'];
   $sql = "INSERT INTO book_review (full_name, book_title, review_text, rating)
-    VALUES ($fullname, $title, $description, $rating)";
+VALUES ($fullname, $title, $description, $rating)";
+  $conn->exec($sql);
+  echo "New record created successfully";
 $conn->exec($sql);
 
 } catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+  echo "<br />Connection failed: " . $e->getMessage();
 }
